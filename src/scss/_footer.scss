@@ -1,0 +1,134 @@
+footer {
+    .container {
+        .row__footer {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            width: auto;
+            height: 44.4em;
+            .col {
+                flex: 1;
+            }
+            .col__addresses {
+                background-color: $blueGlass;
+                padding: 5em 2em 0 3.8em;
+                width: 100%;
+                .address {
+                    color: $white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    margin: 0 0 0.6em 0;
+                    .address__icon {
+                        width: 5em;
+                        height: 5em;
+                        margin: 0 2em 0 0;
+                    }
+                    .address__text {
+                        font-size: 1.6em;
+                        line-height: 1.2;
+                    }
+                }
+
+                .socials {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    margin: 3em 0 3.5em 0.4em;
+                    .soc {
+                        width: 5em;
+                        height: 5em;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0 0.6em 0 0;
+
+                        .icon-vk,
+                        .icon-ok,
+                        .icon-wa,
+                        .icon-tgm {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+
+                .payments {
+                    margin: 0 0 3em 0;
+                    width: 30em;
+                    height: 3em;
+                    .payments__img {
+                        width: auto;
+                        height: auto;
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+
+                .get-taxi {
+                    width: 13.1em;
+                    height: 2.7em;
+                    cursor: pointer;
+                    img {
+                        width: auto;
+                        height: auto;
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+            }
+            .col__map {
+                flex: none;
+                width: 72em;
+
+                iframe {
+                    width: 72em;
+                    height: 44em;
+                }
+            }
+
+            .col__links {
+                background-color: $blueGlass;
+                padding: 3.8em 0 0 5.2em;
+                width: 100%;
+                .footer__menu {
+                    list-style: none;
+                    margin: 0 0 4.2em 0;
+                    .menu__item {
+                        .menu__link {
+                            color: $white;
+                            font-weight: 400;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            font-size: 1.2em;
+                            line-height: 2;
+                        }
+                    }
+                }
+
+                .dela-prezidenta {
+                    width: 17em;
+                    height: 14.1em;
+                    left: -1.6em;
+                }
+            }
+        }
+
+        .row__documents {
+            .docs {
+                background-color: $blue;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-left: 2.5em;
+                padding-right: 2.5em;
+                padding: 3.2em 2.5em 4.4em;
+                .doc__link {
+                    color: $white;
+                    text-decoration: none;
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}

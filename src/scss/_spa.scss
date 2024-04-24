@@ -1,0 +1,100 @@
+.advantages-spa {
+    .container {
+        .row-advantages {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            padding: 0 4.2em;
+            margin-top: 3em;
+            margin-bottom: 4.4em;
+            .advantage {
+                width: 12.5%;
+                text-align: center;
+                .advanage__icon {
+                    width: 6em;
+                    height: 6.2em;
+                    display: inline-block;
+                    margin: 0 0 5.4em 0;
+                }
+                .advantage__text {
+                    font-size: 1.4em;
+                    color: $blue;
+                    line-height: 1.4;
+
+                    a {
+                        border-bottom: 0.1em dashed $blue;
+                        color: $blue;
+                        margin: 0 0.5em;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .row-pool-slider {
+            margin-top: 4.4em;
+            height: 65em;
+            margin-bottom: 4em;
+            .swiper {
+                width: 100%;
+                height: 100%;
+                .swiper-wrapper {
+                    height: 100%;
+                    .swiper-slide {
+                        height: 100%;
+                        .inner {
+                            width: 100%;
+                            height: 100%;
+                            .bg-image {
+                                width: 100%;
+                                height: 100%;
+                                background-size: cover;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .row-rules {
+            margin-top: 3.8em;
+            margin-bottom: 3.4em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .spa__rules {
+                font-size: 1.6em;
+                text-transform: uppercase;
+                border-bottom: 0.1em dashed $blue;
+                display: inline-block;
+                font-weight: 600;
+                cursor: pointer;
+                margin-bottom: 2.8em;
+                margin-top: 0;
+            }
+            .spa__price {
+                font-size: 1.6em;
+                text-transform: uppercase;
+                border-bottom: 0.1em dashed $blue;
+                display: inline-block;
+                font-weight: 600;
+                cursor: pointer;
+                margin-bottom: 2.8em;
+            }
+            .spa__trial-visit {
+                font-size: 1.6em;
+                display: inline-block;
+                font-weight: 600;
+                .spa__trial-link {
+                    border-bottom: 0.1em dashed $blue;
+                    color: $blue;
+                    text-decoration: none;
+                    margin: 0 0.5em;
+                }
+            }
+        }
+    }
+}

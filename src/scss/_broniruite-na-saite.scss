@@ -1,0 +1,111 @@
+.broniruite-na-saite {
+    margin: 2.5em 0;
+    .container {
+        .row__advantages {
+            padding: 0 8em;
+            margin-bottom: 5.5em;
+            .section-title {
+            }
+
+            .advantages {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0 0 4.5em 0;
+                .advantage {
+                    width: 25%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    .advantage__icon {
+                        width: 6em;
+                        height: 6em;
+                        margin: 0 2.5em 0 0;
+                    }
+                    .advantage__text {
+                        font-size: 1.8em;
+                        color: $text;
+                    }
+                }
+            }
+
+            .content-box {
+            }
+        }
+
+        .row__rooms {
+            margin-top: 5.5em;
+            margin-bottom: 5.5em;
+
+            .rooms-list {
+                .room {
+                    background-color: $blueGlass;
+                    padding: 4.4em 12em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 5.5em 0;
+
+                    .room__slider {
+                        width: 45em;
+                        height: 30em;
+                        -webkit-box-flex: 0;
+                        -ms-flex: none;
+                        flex: none;
+                        margin: 0 6em 0 0;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        overflow: hidden;
+
+                        .swiper-wrapper {
+                            height: 100%;
+                            .swiper-slide {
+                                width: 100%;
+                                height: 100%;
+                                .inner {
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    .room__photo {
+                                        width: 100%;
+                                        height: 100%;
+                                        background-repeat: no-repeat;
+                                        background-position: center;
+                                        background-size: cover;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .room__info {
+                        width: 100%;
+                        .content-box {
+                        }
+                        .btn {
+                            font-size: 2em;
+                            padding: 0.35em 2.55em;
+                            margin: 2em 0 0 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .row__rooms-seo {
+            margin-top: 6em;
+            margin-bottom: 4.8em;
+            padding: 0 25em;
+            .content-box {
+            }
+            .btn {
+                font-size: 2em;
+                padding: 0.35em 2em;
+                margin: 2em 0 0 0;
+            }
+        }
+    }
+}

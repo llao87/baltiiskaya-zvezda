@@ -1,0 +1,117 @@
+.contacts {
+    padding: 19.5em 0 15em 0;
+    .container {
+        .columns {
+            .column {
+                .section-title {
+                    text-align: left;
+                    margin-bottom: 1em;
+                }
+
+                .content {
+                    line-height: 1.5;
+                    margin-bottom: 4em;
+                }
+                .contact-blocks {
+                    display: flex;
+                    align-items: stretch;
+                    flex-wrap: wrap;
+
+                    .contact-block {
+                        width: 50%;
+                        .title {
+                            font-size: 2em;
+                            font-weight: 500;
+                            margin: 0 0 0.7em 0;
+                        }
+                        .content {
+                            a {
+                                font-size: 2em;
+                                text-decoration: none;
+                                color: $grayDark;
+                            }
+                        }
+                        .socials {
+                            .soc {
+                                margin-right: 1em;
+                                .soc-icon {
+                                    display: inline-block;
+                                    height: 2em;
+                                    width: 3em;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                    background-position: top center;
+                                    transition: all 0.3s linear;
+                                }
+                                .soc-icon--ins {
+                                    background-image: url(/img/icon-instagram.svg);
+                                    &:hover {
+                                        background-image: url(/img/icon-instagram-hover.svg);
+                                    }
+                                }
+                                .soc-icon--vk {
+                                    background-image: url(/img/icon-vk.svg);
+                                    &:hover {
+                                        background-image: url(/img/icon-vk-hover.svg);
+                                    }
+                                }
+                                .soc-icon--wa {
+                                    background-image: url(/img/icon-whatsapp.svg);
+                                    &:hover {
+                                        background-image: url(/img/icon-whatsapp-hover.svg);
+                                    }
+                                }
+                                .soc-icon--tg {
+                                    background-image: url(/img/icon-telegram.svg);
+                                    &:hover {
+                                        background-image: url(/img/icon-telegram-hover.svg);
+                                    }
+                                }
+                                .soc-icon--ytb {
+                                    background-image: url(/img/icon-youtube.svg);
+                                    &:hover {
+                                        background-image: url(/img/icon-youtube-hover.svg);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .section-title {
+                }
+                #feedback {
+                    .fields {
+                        label {
+                            .form-input {
+                            }
+                            .form-textarea {
+                            }
+                        }
+                    }
+                    .controls {
+                        .btn {
+                        }
+                    }
+                }
+
+                .contacts-bg-image {
+                    position: absolute;
+                    width: 45em;
+                    height: 70em;
+                    background-image: url(/img/feedback.png);
+                    background-size: contain;
+                    background-position: center top;
+                    background-repeat: no-repeat;
+                    left: 50%;
+                    -webkit-transform: translateX(-50%);
+                    -ms-transform: translateX(-50%);
+                    transform: translateX(-50%);
+                    top: -10em;
+                }
+            }
+            .column-info {
+                padding-left: 10em;
+            }
+        }
+    }
+}
