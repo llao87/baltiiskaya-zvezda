@@ -1,0 +1,47 @@
+.menu-sets {
+    margin: 4rem 0 8rem 0;
+    .container {
+        .row {
+        }
+        .row__slogan {
+            margin: 2.4rem 0 0 0;
+            .slogan__text {
+                padding: 0 15rem;
+                line-height: 1.4;
+                margin-bottom: 1rem;
+                font-size: 2rem;
+                color: $blue;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .row__sets {
+            margin: 4rem 0 0 0;
+            padding: 0 12rem;
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            .set {
+                text-align: center;
+                width: 33.5rem;
+                height: 45rem;
+                border: 0.25rem solid $blue;
+                .btn {
+                    position: absolute;
+                    bottom: 3.7rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    font-size: 1.7rem;
+                    font-weight: 300;
+                    padding: 0.9rem 4rem;
+                    display: inline-block;
+                    text-wrap: nowrap;
+                    cursor: pointer;
+                    transition: all 0.3s linear;
+                }
+            }
+        }
+    }
+}

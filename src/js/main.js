@@ -109,22 +109,42 @@ jQuery(function () {
             // 580: {
             //     slidesPerView: 1,
             // },
-            // 768: {
-            //     slidesPerView: 2,
-            // },
-            // 991: {
-            //     slidesPerView: 3,
-            // },
-            // 1180: {
-            //     slidesPerView: 4,
-            // },
-            // 1340: {
-            //     slidesPerView: 5,
-            // },
         },
         navigation: {
             nextEl: ".promo-slider-wrap .promo__controls .slider-arrow.next",
             prevEl: ".promo-slider-wrap .promo__controls .slider-arrow.prev",
         },
     });
+
+    const restSlider = new Swiper('.js__rest-gallery .swiper', {
+        loop: true,
+        speed: 800,
+        spaceBetween: 15,
+        slidesPerView: 1,
+        breakpoints: {
+            // 580: {
+            //     slidesPerView: 1,
+            // },
+        },
+        navigation: {
+            nextEl: ".js__rest-gallery .next",
+            prevEl: ".js__rest-gallery .prev",
+        },
+    })
+
+    const menusSlider = new Swiper('.js__menu-slider .swiper', {
+        loop: true,
+        speed: 800,
+        spaceBetween: 0,
+        slidesPerView: 3,
+        breakpoints: {
+            // 580: {
+            //     slidesPerView: 1,
+            // },
+        },
+        navigation: {
+            nextEl: ".js__menu-slider .next",
+            prevEl: ".js__menu-slider .prev",
+        },
+    })
 });

@@ -10,6 +10,7 @@
 html {
     width: 100%;
     // height: 100%;
+    font-size: 0.5208333vw;
     height: 1500%;
     overflow-x: hidden;
 }
@@ -102,4 +103,5 @@ body {
     text-align: center;
     margin: 0 0 0.4em 0;
     padding: 0;
+    color: $blue;
 }

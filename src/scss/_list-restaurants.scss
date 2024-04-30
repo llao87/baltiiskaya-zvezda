@@ -1,0 +1,123 @@
+.restaraunts {
+    margin: 0 0 10rem 0;
+    .container {
+        .row {
+        }
+        .row__restaraunts-list {
+            padding: 0 12rem;
+            .restaraunt {
+                display: flex;
+                align-items: stretch;
+                justify-content: space-between;
+                margin: 0 0 8rem 0;
+                .col {
+                }
+                .restaraunt__gallery {
+                    order: 1;
+                    width: 56rem;
+                    flex: none;
+                    height: 38rem;
+
+                    .swiper {
+                        width: 100%;
+                        height: 100%;
+                        .swiper-wrapper {
+                            height: 100%;
+                            .swiper-slide {
+                                width: 100%;
+                                height: 100%;
+                                .inner {
+                                    width: 100%;
+                                    height: 100%;
+                                    .bg-inner {
+                                        width: 100%;
+                                        height: 100%;
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .controls {
+                        position: absolute;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 80%;
+                        height: 0;
+                        bottom: 4.5rem;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        z-index: 15;
+                        .prev,
+                        .next {
+                            width: 3rem;
+                            height: 3rem;
+                            display: block;
+                            top: 1.5rem;
+                            transform: translateY(-50%);
+                            background-image: url(/img/icon-slider-prev.png);
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            cursor: pointer;
+                        }
+                        .next {
+                            background-image: url(/img/icon-slider-next.png);
+                        }
+                    }
+                }
+                .restaraunt__info {
+                    order: 2;
+                    width: 56rem;
+                    flex: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    background: $blueGlass;
+                    .title {
+                        font-size: 2rem;
+                        font-weight: 700;
+                        margin: 0 0 5rem 0;
+                        color: #fff;
+                        padding: 0 8rem;
+                        text-align: center;
+                        line-height: 1.4;
+                    }
+                    .info {
+                        text-align: center;
+                        font-size: 1.8rem;
+                        line-height: 1.5;
+                        padding: 0 8rem;
+                        color: #fff;
+
+                        span {
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                    .link__menu {
+                        display: inline-block;
+                        font-size: 1.8rem;
+                        font-weight: 300;
+                        margin: 5rem 0 0 0;
+                        color: #fff;
+                        text-align: center;
+                        line-height: 1.4;
+                    }
+                }
+            }
+            .restaraunt--inverse {
+                .restaraunt__gallery {
+                    order: 2;
+                }
+                .restaraunt__info {
+                    order: 1;
+                }
+            }
+        }
+    }
+}

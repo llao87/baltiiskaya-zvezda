@@ -1,0 +1,98 @@
+.carousel-menus {
+    margin: 5rem 0;
+    .container {
+        .row {
+            .section-title {
+                margin-bottom: 6.6rem;
+            }
+        }
+        .row__menu-slider {
+            text-align: center;
+            margin: 0 0 5rem 0;
+            .swiper {
+                max-width: 115rem;
+                height: 23.5rem;
+                .swiper-wrapper {
+                    .swiper-slide {
+                        padding: 0 2.5rem;
+                        .inner {
+                            width: 100%;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            &::after {
+                                position: absolute;
+                                content: "";
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                top: 0;
+                                left: 0;
+                                background-color: rgba(
+                                    $color: #000000,
+                                    $alpha: 0.4
+                                );
+                                z-index: 1;
+                            }
+                            .menu-title {
+                                color: #fff;
+                                display: inline-block;
+                                font-size: 2rem;
+                                font-weight: 700;
+                                z-index: 15;
+                            }
+                        }
+                    }
+                }
+            }
+            .controls {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: space-between;
+                height: 0;
+                padding: 0 4rem;
+                .prev,
+                .next {
+                    width: 9rem;
+                    height: 2rem;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    cursor: pointer;
+                }
+                .prev {
+                    background-image: url(/img/arrow-menus-prev.svg);
+                }
+                .next {
+                    background-image: url(/img/arrow-menus-next.svg);
+                }
+            }
+        }
+        .row.row__slogan {
+            color: $blue;
+            p.slogan__text {
+                padding: 0 15rem;
+                line-height: 1.4;
+                margin-bottom: 1rem;
+                font-size: 2rem;
+            }
+
+            .btn {
+                left: 50%;
+                transform: translateX(-50%);
+                margin: 3.2rem 0 0 0;
+                padding: 0.8rem 3.6rem;
+            }
+        }
+    }
+}
