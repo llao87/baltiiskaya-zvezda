@@ -124,4 +124,32 @@ jQuery(function () {
             prevEl: ".js__press-hall .prev",
         },
     });
+
+    /**
+     * Голубой зал
+     */
+    const cyanHallSlider = new Swiper(".js__hall-gallery", {
+        loop: true,
+        speed: 800,
+        spaceBetween: 20,
+        slidesPerView: 1,
+        navigation: {
+            nextEl: ".js__hall-gallery .next",
+            prevEl: ".js__hall-gallery .prev",
+        },
+    });
+
+    /**
+     * Интерьеры Константиновского дворца
+     */
+    const interiorsPalaceSlider = new Swiper(".js__interiors-slider", {
+        loop: true,
+        speed: 800,
+        spaceBetween: 50,
+        slidesPerView: 6,
+        // navigation: {
+        //     nextEl: ".js__interiors-slider .next",
+        //     prevEl: ".js__interiors-slider .prev",
+        // },
+    });
 });

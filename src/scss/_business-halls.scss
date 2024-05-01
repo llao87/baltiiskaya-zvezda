@@ -41,6 +41,78 @@
                                 }
                             }
                         }
+                        .info {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            position: absolute;
+                            // bottom: 1.6rem;
+                            bottom: 0;
+                            padding-bottom: 1.6rem;
+                            left: 0;
+                            width: 100%;
+                            color: #fff;
+                            background: linear-gradient(180deg, rgba(0,0,0,0.05) 10%, rgba(0,0,0,0.45) 50%);
+                            z-index: 15;
+
+                            .area {
+                                width: 30%;
+                                -webkit-box-flex: 0;
+                                -ms-flex: none;
+                                flex: none;
+                                display: flex;
+                                align-items: center;
+                                justify-content: flex-start;
+                                font-size: 1.3rem;
+                                font-weight: 400;
+                                padding: 0 0 0 2rem;
+                                .icon {
+                                    width: 3.5rem;
+                                    height: 3.5rem;
+                                    margin: 0 1rem 0 0;
+                                    img {
+                                        width: auto;
+                                        height: auto;
+                                        max-width: 100%;
+                                        max-height: 100%;
+                                    }
+                                }
+                                .value {
+                                }
+                            }
+                            .title {
+                                width: 40%;
+                                text-align: center;
+                                font-size: 1.3rem;
+                                font-weight: bold;
+                                flex: none;
+                                padding: 0 1rem 0 0;
+                            }
+                            .capacity {
+                                width: 25%;
+                                -webkit-box-flex: 0;
+                                -ms-flex: none;
+                                flex: none;
+                                display: flex;
+                                align-items: center;
+                                justify-content: flex-start;
+                                font-size: 1.3rem;
+                                font-weight: 400;
+                                .icon {
+                                    width: 3.5rem;
+                                    height: 3.5rem;
+                                    margin: 0 1rem 0 0;
+                                    img {
+                                        width: auto;
+                                        height: auto;
+                                        max-width: 100%;
+                                        max-height: 100%;
+                                    }
+                                }
+                                .value {
+                                }
+                            }
+                        }
                     }
                     .controls {
                         position: absolute;

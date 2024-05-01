@@ -104,4 +104,33 @@ body {
     margin: 0 0 0.4em 0;
     padding: 0;
     color: $blue;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+
+.controls {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 0;
+    bottom: 5rem;
+    z-index: 15;
+    .prev,
+    .next {
+        width: 3rem;
+        height: 3rem;
+        display: block;
+        top: 1.5rem;
+        transform: translateY(-50%);
+        background-image: url(/img/icon-slider-prev.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .next {
+        background-image: url(/img/icon-slider-next.png);
+    }
 }
