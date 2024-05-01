@@ -1,150 +1,127 @@
 jQuery(function () {
-    /*
-    const partnersCarousel = new Swiper(".partners-slider", {
-        loop: true,
-        slidesPerView: 5,
-        autoplay: {
-            delay: 1500,
-            disableOnInteraction: false,
-        },
-        breakpoints: {
-            // 580: {
-            //     slidesPerView: 1,
-            // },
-            // 768: {
-            //     slidesPerView: 2,
-            // },
-            // 991: {
-            //     slidesPerView: 3,
-            // },
-            // 1180: {
-            //     slidesPerView: 4,
-            // },
-            // 1340: {
-            //     slidesPerView: 5,
-            // },
-        },
+    /**
+     * Карусель в промо блоке
+     */
+    const roomSliders = document.querySelectorAll(".js__room-slider");
+    roomSliders.forEach((roomElem) => {
+        const swiper = new Swiper(roomElem, {
+            loop: true,
+            speed: 800,
+            spaceBetween: 20,
+            slidesPerView: 1,
+            breakpoints: {
+                // 580: {
+                //     slidesPerView: 1,
+                // },
+            },
+            navigation: {
+                nextEl: roomElem.querySelector(".next"),
+                prevEl: roomElem.querySelector(".prev"),
+            },
+        });
     });
 
-    const projectsCarousel = new Swiper(".js__projects-slider", {
-        slidesPerView: 1,
-        navigation: {
-            nextEl: ".projects .container .controls .next-project",
-            prevEl: ".projects .container .controls .prev-project",
-        },
-    });
-
-    // прокрутка страницы
-    jQuery(".nav-link").on("click", function (e) {
-        e.preventDefault();
-        let href = jQuery(this).attr("href");
-
-        console.log(document.location.pathname);
-
-        if (document.location.pathname == "/") {
-            if (href == "/") {
-                href = "#promo";
-            }
-
-            if (href.includes("#")) {
-                jQuery(this)
-                    .parents(".container")
-                    .find(".active")
-                    .removeClass("active");
-
-                jQuery("html, body").animate(
-                    {
-                        scrollTop: jQuery(href).stop().offset().top,
-                    },
-                    {
-                        duration: 900,
-                        easing: "linear",
-                    }
-                );
-            } else {
-                document.location.href = href;
-            }
-        } else {
-            href = href.includes("#") ? "/" + href : href;
-            document.location.href = href;
-        }
-    });
-    */
-
-    // Карусель в промо блоке
-    const roomSlider = new Swiper(".js__room-slider", {
-        loop: true,
-        speed: 800,
-        spaceBetween: 15,
-        slidesPerView: 1,
-        breakpoints: {
-            // 580: {
-            //     slidesPerView: 1,
-            // },
-            // 768: {
-            //     slidesPerView: 2,
-            // },
-            // 991: {
-            //     slidesPerView: 3,
-            // },
-            // 1180: {
-            //     slidesPerView: 4,
-            // },
-            // 1340: {
-            //     slidesPerView: 5,
-            // },
-        },
-        navigation: {
-            nextEl: ".promo-slider-wrap .promo__controls .slider-arrow.next",
-            prevEl: ".promo-slider-wrap .promo__controls .slider-arrow.prev",
-        },
-    });
-
+    /**
+     * слайдер СПА
+     */
     const spaSwimmingPool = new Swiper(".js__pool-slider", {
         loop: true,
         speed: 800,
-        spaceBetween: 15,
+        spaceBetween: 20,
         slidesPerView: 1,
-        breakpoints: {
-            // 580: {
-            //     slidesPerView: 1,
-            // },
-        },
         navigation: {
-            nextEl: ".promo-slider-wrap .promo__controls .slider-arrow.next",
-            prevEl: ".promo-slider-wrap .promo__controls .slider-arrow.prev",
+            nextEl: ".js__pool-slider .next",
+            prevEl: ".js__pool-slider .prev",
         },
     });
 
-    const restSlider = new Swiper('.js__rest-gallery .swiper', {
+    /**
+     * Слайдер коттеджа Консульская деревня
+     */
+    const consulVillageSlider = new Swiper(".js__consul-village", {
         loop: true,
         speed: 800,
-        spaceBetween: 15,
+        spaceBetween: 20,
         slidesPerView: 1,
-        breakpoints: {
-            // 580: {
-            //     slidesPerView: 1,
-            // },
-        },
         navigation: {
-            nextEl: ".js__rest-gallery .next",
-            prevEl: ".js__rest-gallery .prev",
+            nextEl: ".js__consul-village .next",
+            prevEl: ".js__consul-village .prev",
         },
-    })
+    });
 
-    const menusSlider = new Swiper('.js__menu-slider .swiper', {
+    /**
+     * Слайдер коттеджа "Петровский"
+     */
+
+    const cottagePetrovskii = new Swiper(".js__petrovskii", {
         loop: true,
         speed: 800,
-        spaceBetween: 0,
-        slidesPerView: 3,
-        breakpoints: {
-            // 580: {
-            //     slidesPerView: 1,
-            // },
+        spaceBetween: 20,
+        slidesPerView: 1,
+        navigation: {
+            nextEl: ".js__petrovskii .next",
+            prevEl: ".js__petrovskii .prev",
         },
+    });
+
+    /**
+     * Слайдер ресторанов
+     */
+    const restElems = document.querySelectorAll(".js__rest-gallery");
+    restElems.forEach((restElem) => {
+        const swiper = new Swiper(restElem, {
+            loop: true,
+            speed: 800,
+            spaceBetween: 20,
+            slidesPerView: 1,
+            navigation: {
+                nextEl: restElem.querySelector(".next"),
+                prevEl: restElem.querySelector(".prev"),
+            },
+        });
+    });
+
+    /**
+     * Слайдер меню на странице ресторанов
+     */
+    const menusSlider = new Swiper(".js__menu-slider .swiper", {
+        loop: true,
+        speed: 800,
+        slidesPerView: 3,
         navigation: {
             nextEl: ".js__menu-slider .next",
             prevEl: ".js__menu-slider .prev",
         },
-    })
+    });
+
+    /**
+     * Бизнес залы
+     */
+    const businessHalls = document.querySelectorAll(".js__hall-gallery");
+    businessHalls.forEach((hallElem) => {
+        const swiper = new Swiper(hallElem, {
+            loop: true,
+            speed: 800,
+            spaceBetween: 20,
+            slidesPerView: 1,
+            navigation: {
+                nextEl: hallElem.querySelector(".next"),
+                prevEl: hallElem.querySelector(".prev"),
+            },
+        });
+    });
+
+    /**
+     * Пресс Холл
+     */
+    const pressHallSlider = new Swiper(".js__press-hall", {
+        loop: true,
+        speed: 800,
+        spaceBetween: 20,
+        slidesPerView: 1,
+        navigation: {
+            nextEl: ".js__press-hall .next",
+            prevEl: ".js__press-hall .prev",
+        },
+    });
 });

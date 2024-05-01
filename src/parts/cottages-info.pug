@@ -5,7 +5,15 @@ section.cottages
 
 
         .row.row__first-line 
-            .bg-image(style="background-image: url(/img/cottages__first-line.jpg)")
+            .swiper.js__consul-village 
+                .swiper-wrapper 
+                    .swiper-slide 
+                        .inner
+                            .bg-image(style="background-image: url(/img/cottages__first-line.jpg)")
+                .controls 
+                    .prev
+                    .next 
+            
             .info 
                 .info__text
                     .content-box.center 
@@ -16,13 +24,20 @@ section.cottages
                         .btn Забронировать
 
         .row.row__petrovskii
-            .bg-image(style="background-image: url(/img/cottages__petrovskii.jpg)")
-                .info 
-                    .info__text
-                        .content-box.center 
-                            h3 КОТТЕДЖ “ПЕТРОВСКИЙ”
-                            p Эксклюзивная локация на Петровском острове на берегу Малой Невки.
-                            p Площадь: 340 кв.м
-                            p Вместимость: 10 человек
+            .swiper.js__petrovskii
+                .swiper-wrapper 
+                    .swiper-slide 
+                        .inner
+                            .bg-image(style="background-image: url(/img/cottages__petrovskii.jpg)")
+                .controls 
+                    .prev
+                    .next 
+            .info 
+                .info__text
+                    .content-box.center 
+                        h3 КОТТЕДЖ “ПЕТРОВСКИЙ”
+                        p Эксклюзивная локация на Петровском острове на берегу Малой Невки.
+                        p Площадь: 340 кв.м
+                        p Вместимость: 10 человек
 
-                    .btn.btn--blue Забронировать
+                .btn.btn--blue Забронировать

@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Palatino Linotype';
-    src: url('../PalatinoLinotype-Bold.woff2') format('woff2'),
-        url('../PalatinoLinotype-Bold.woff') format('woff'),
-        url('../PalatinoLinotype-Bold.ttf') format('truetype');
+    src: url('/fonts/PalatinoLinotype-Bold.woff2') format('woff2'),
+        url('/fonts/PalatinoLinotype-Bold.woff') format('woff'),
+        url('/fonts/PalatinoLinotype-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -10,9 +10,9 @@
 
 @font-face {
     font-family: 'Palatino Linotype';
-    src: url('../PalatinoLinotype-Roman.woff2') format('woff2'),
-        url('../PalatinoLinotype-Roman.woff') format('woff'),
-        url('../PalatinoLinotype-Roman.ttf') format('truetype');
+    src: url('/fonts/PalatinoLinotype-Roman.woff2') format('woff2'),
+        url('/fonts/PalatinoLinotype-Roman.woff') format('woff'),
+        url('/fonts/PalatinoLinotype-Roman.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

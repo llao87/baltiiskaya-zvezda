@@ -55,6 +55,34 @@
                         }
                     }
                 }
+                .controls {
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 85%;
+                    height: 0;
+                    bottom: 13.5rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: 15;
+                    .prev,
+                    .next {
+                        width: 3rem;
+                        height: 3rem;
+                        display: block;
+                        top: 1.5rem;
+                        transform: translateY(-50%);
+                        background-image: url(/img/icon-slider-prev.png);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        cursor: pointer;
+                    }
+                    .next {
+                        background-image: url(/img/icon-slider-next.png);
+                    }
+                }
             }
         }
 
