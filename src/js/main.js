@@ -148,8 +148,34 @@ jQuery(function () {
         spaceBetween: 50,
         slidesPerView: 6,
         // navigation: {
-        //     nextEl: ".js__interiors-slider .next",
-        //     prevEl: ".js__interiors-slider .prev",
+        //     nextEl: ".js__interiors-slider > .next",
+        //     prevEl: ".js__interiors-slider > .prev",
         // },
+    });
+
+    /**
+     * Комнаты на главной
+     */
+    const homeRoomsSlider = new Swiper(".js__rooms-slider", {
+        loop: true,
+        speed: 800,
+        spaceBetween: 20,
+        slidesPerView: 1,
+        navigation: {
+            nextEl: ".js__rooms-slider .controls__rooms .next",
+            prevEl: ".js__rooms-slider .controls__rooms .prev",
+        },
+    });
+
+    const homeRoomsGallery = new Swiper(".js__room-photo", {
+        loop: true,
+        nested: true,
+        speed: 800,
+        spaceBetween: 20,
+        slidesPerView: 1,
+        navigation: {
+            nextEl: ".js__room-photo .controls__gallery .next",
+            prevEl: ".js__room-photo .controls__gallery .prev",
+        },
     });
 });

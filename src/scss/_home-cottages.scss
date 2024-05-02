@@ -1,0 +1,63 @@
+.home-cottages {
+    margin: 4rem 0 3rem;
+    .container {
+        padding: 2.6rem 0 8.9rem;
+        background-color: $blueGlass;
+        .row {
+            .section-title {
+                margin: 0;
+            }
+        }
+
+        .row.row__cottages {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            padding: 0 13.5rem;
+            .col {
+                width: 33%;
+                flex: none;
+                &:nth-child(2) {
+                    padding: 2.2rem 1rem;
+                }
+                .photo {
+                    width: 100%;
+                    height: 30.8rem;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+                .photo__petrovskii,
+                .photo__consult {
+                    .name {
+                        position: absolute;
+                        font-size: 1.7rem;
+                        color: #fff;
+                        text-decoration: underline;
+                        bottom: 3rem;
+                        left: 5rem;
+                        line-height: 1.4;
+                        max-width: 28rem;
+                        cursor: pointer;
+                    }
+                }
+
+                .info {
+                    color: #fff;
+                    .content-box {
+                        p {
+                            font-size: 1.4rem;
+                            line-height: 1.4;
+                            margin-bottom: 2rem;
+                        }
+                        .btn {
+                            padding: 0.8rem 3rem;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

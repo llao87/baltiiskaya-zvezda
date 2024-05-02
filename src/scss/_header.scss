@@ -1,4 +1,126 @@
 .header {
+    margin: 0 0 2.4rem 0;
+    .container {
+        height: 70.5em;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        .row {
+            .top-line {
+                display: flex;
+                align-items: stretch;
+                justify-content: center;
+                height: 8em;
+                z-index: 10;
+                &::after {
+                    position: absolute;
+                    display: block;
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    background-color: $blueGlass;
+                    z-index: -1;
+                }
+                .col {
+                    height: 100%;
+                }
+                .col__address {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex: none;
+                    padding: 0 0 0 3em;
+                    height: 100%;
+                    .address {
+                        font-size: 1.6em;
+                        line-height: 1.35;
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+                .col__logo {
+                    -webkit-box-flex: 0;
+                    -ms-flex: none;
+                    flex: none;
+                    text-align: center;
+                    width: 30em;
+
+                    .logo {
+                        display: inline-flex;
+                        text-decoration: none;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
+                        width: 19em;
+                        margin: 0;
+                        text-align: center;
+                        margin: 0 0 0 1.1em;
+                        left: 2em;
+
+                        .logo__img {
+                            max-width: 100%;
+                            max-height: 100%;
+                            width: auto;
+                            height: auto;
+                        }
+                    }
+                }
+                .col__contacts {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex: none;
+                    padding: 0 0 0 6em;
+                    height: 100%;
+                    .contact {
+                        font-size: 1.6em;
+                        line-height: 1.35;
+                        font-weight: 600;
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .row {
+            .nav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #14315e;
+                padding: 2.5em 11.4em 2.5em;
+                z-index: 10;
+                .nav__item {
+                    display: inline-block;
+                    width: auto;
+                    .nav__link {
+                        font-size: 1.5em;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        color: #ffffff;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .row {
+            .bronirovanie {
+                max-width: 120em;
+                width: 100%;
+                height: 9em;
+                margin: 41em auto 0;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                z-index: 10;
+            }
+        }
+    }
+}
+.header-rooms {
     .container {
         height: 56em;
         background-size: cover;
