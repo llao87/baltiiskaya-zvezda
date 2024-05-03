@@ -1,0 +1,72 @@
+.home-conference-halls {
+    .container {
+        .row {
+            .section-title {
+                text-align: left;
+                padding-left: 11.5rem;
+            }
+
+            .description {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                padding: 0 11.5rem;
+                .text {
+                    font-size: 2rem;
+                    width: 80%;
+                    flex: none;
+                    line-height: 1.4;
+                }
+                .btn {
+                    font-size: 1.8rem;
+                    padding: 1rem 3.5rem;
+                }
+            }
+        }
+
+        .row.row__slider {
+            .swiper.js__halls-home-slider {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        .swiper.js__hall-gallery {
+                            .swiper-wrapper {
+                                .swiper-slide {
+                                    .inner {
+                                        .slide-bg {
+                                        }
+                                    }
+                                }
+                            }
+                            .info {
+                                .area {
+                                    .icon {
+                                        img {
+                                        }
+                                    }
+                                    .value {
+                                    }
+                                }
+                                .title {
+                                }
+                                .capacity {
+                                    .icon {
+                                        img {
+                                        }
+                                    }
+                                    .value {
+                                    }
+                                }
+                            }
+                            .controls {
+                                .prev {
+                                }
+                                .next {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,44 +1,72 @@
 .home-spa {
     .container {
         .row {
-            .section-title {}
+            .section-title {
+            }
         }
         .row.row__spa-items {
-                display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0 7rem;
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0 7rem;
             .spa-item {
                 width: 30%;
-    margin: 0 0 3.4rem 0;
-    height: 28rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+                margin: 0 0 3.4rem 0;
+                height: 28rem;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                overflow: hidden;
                 .name {
-                        color: #fff;
-                        color: #000;
-    text-decoration: underline;
-    bottom: 3rem;
-    font-size: 2rem;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 15;
+                    color: #fff;
+                    text-decoration: underline;
+                    bottom: 3rem;
+                    font-size: 2rem;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: 15;
                 }
                 .info {
-                        display: flex;
-    width: 100%;
-    flex-direction: column;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    z-index: 25;
-    background: rgba(0, 0, 0, 0.5);
-                    .title {}
-                    .description {}
-                    .link {}
+                    position: absolute;
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                    height: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 25;
+                    transform: translateY(100%);
+                    background: rgba(0, 0, 0, 0.75);
+                    transition: all 0.6s ease-out;
+                    left: 0;
+                    top: 0;
+                    padding: 2.5rem;
+                    .title {
+                        font-size: 1.8rem;
+                        color: #fff;
+                        margin: 4.6rem 0 2rem 0;
+                    }
+                    .description {
+                        font-size: 1.8rem;
+                        color: #fff;
+                        text-align: center;
+                        margin: 0 0 4rem 0;
+                        line-height: 1.5;
+                    }
+                    .link {
+                        font-size: 1.8rem;
+                        text-decoration: underline;
+                        color: #fff;
+                        margin: 0 0 0 0;
+                    }
+                }
+
+                &:hover {
+                    .info {
+                        transform: translateY(0%);
+                    }
                 }
             }
         }
