@@ -3,9 +3,22 @@
     .container {
         padding: 2.6rem 0 8.9rem;
         background-color: $blueGlass;
+        @media screen and (max-width: 1280px) {
+            padding-bottom: 5rem;
+        }
+        @media screen and (max-width: 768px) {
+            padding: 2rem 0 3rem;
+        }
         .row {
             .section-title {
                 margin: 0;
+
+                @media screen and (max-width: 991px) {
+                    margin-bottom: 2rem;
+                }
+                @media screen and (max-width: 768px) {
+                    color: #fff;
+                }
             }
         }
 
@@ -14,12 +27,57 @@
             align-items: stretch;
             justify-content: space-between;
             padding: 0 13.5rem;
+            @media screen and (max-width: 991px) {
+                padding: 0 3rem;
+                flex-wrap: wrap;
+            }
             .col {
                 width: 33%;
                 flex: none;
+
+                @media screen and (max-width: 1280px) {
+                    width: 28%;
+                }
+                &:nth-child(1) {
+                    @media screen and (max-width: 991px) {
+                        width: 49%;
+                        order: 1;
+                    }
+                    @media screen and (max-width: 600px) {
+                        width: 100%;
+                        margin-bottom: 2rem;
+                    }
+                }
                 &:nth-child(2) {
                     padding: 2.2rem 1rem;
+
+                    @media screen and (max-width: 1280px) {
+                        padding: 2.2rem 3rem;
+                        width: 100%;
+                        flex: 1;
+                    }
+                    @media screen and (max-width: 991px) {
+                        width: 100%;
+                        order: 3;
+                    }
+                    @media screen and (max-width: 768px) {
+                        width: 100%;
+                        order: 3;
+                        padding: 2rem 0 0;
+                    }
                 }
+                &:nth-child(3) {
+                    @media screen and (max-width: 991px) {
+                        width: 49%;
+                        order: 2;
+                    }
+                    @media screen and (max-width: 600px) {
+                        width: 100%;
+                        order: 2;
+                        margin-bottom: 0;
+                    }
+                }
+
                 .photo {
                     width: 100%;
                     height: 30.8rem;
@@ -29,6 +87,14 @@
                 }
                 .photo__petrovskii,
                 .photo__consult {
+                    @media screen and (max-width: 768px) {
+                        height: 17rem;
+                        margin-bottom: 1rem;
+
+                        &:last-of-type {
+                            margin: 0;
+                        }
+                    }
                     .name {
                         position: absolute;
                         font-size: 1.7rem;
@@ -39,6 +105,21 @@
                         line-height: 1.4;
                         max-width: 28rem;
                         cursor: pointer;
+
+                        @media screen and (max-width: 1280px) {
+                            max-width: none;
+                            width: 100%;
+                            left: 0;
+                            padding: 0 2rem;
+                            bottom: 2rem;
+                            text-align: center;
+                        }
+                        @media screen and (max-width: 991px) {
+                            font-size: 1.6rem;
+                        }
+                        @media screen and (max-width: 768px) {
+                            font-size: 1.4rem;
+                        }
                     }
                 }
 
@@ -54,6 +135,13 @@
                             padding: 0.8rem 3rem;
                             left: 50%;
                             transform: translateX(-50%);
+
+                            @media screen and (max-width: 1280px) {
+                                margin-top: 3rem;
+                            }
+                            @media screen and (max-width: 768px) {
+                                font-size: 1.4rem;
+                            }
                         }
                     }
                 }

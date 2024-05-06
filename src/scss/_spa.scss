@@ -7,25 +7,42 @@
             padding: 0 4.2em;
             margin-top: 3em;
             margin-bottom: 4.4em;
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+            }
             .advantage {
                 width: 12.5%;
                 text-align: center;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    margin-bottom: 2rem;
+                    display: flex;
+                }
                 .advanage__icon {
                     width: 6em;
                     height: 6.2em;
                     display: inline-block;
                     margin: 0 0 5.4em 0;
+                    @media screen and (max-width: 768px) {
+                        margin: 0 3rem 0 0;
+                    }
                 }
                 .advantage__text {
                     font-size: 1.4em;
                     color: $blue;
                     line-height: 1.4;
+                    @media screen and (max-width: 768px) {
+                        font-size: 1.4rem;
+                    }
 
                     a {
                         border-bottom: 0.1em dashed $blue;
                         color: $blue;
                         margin: 0 0.5em;
                         text-decoration: none;
+                        @media screen and (max-width: 768px) {
+                            font-size: 1.4rem;
+                        }
                     }
                 }
             }
@@ -35,6 +52,10 @@
             margin-top: 4.4em;
             height: 65em;
             margin-bottom: 4em;
+            @media screen and (max-width: 768px) {
+                height: 35rem;
+                margin: 2rem 0;
+            }
             .swiper {
                 width: 100%;
                 height: 100%;
@@ -66,6 +87,9 @@
                     left: 50%;
                     transform: translateX(-50%);
                     z-index: 15;
+                    @media screen and (max-width: 768px) {
+                        bottom: 3rem;
+                    }
                     .prev,
                     .next {
                         width: 3rem;
@@ -93,6 +117,9 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            @media screen and (max-width: 768px) {
+                padding: 0 3rem;
+            }
             .spa__rules {
                 font-size: 1.6em;
                 text-transform: uppercase;
@@ -102,6 +129,13 @@
                 cursor: pointer;
                 margin-bottom: 2.8em;
                 margin-top: 0;
+                @media screen and (max-width: 768px) {
+                    font-size: 1.4rem;
+                    text-decoration: underline;
+                    border: none;
+                    text-align: center;
+                    width: 100%;
+                }
             }
             .spa__price {
                 font-size: 1.6em;
@@ -111,16 +145,37 @@
                 font-weight: 600;
                 cursor: pointer;
                 margin-bottom: 2.8em;
+                @media screen and (max-width: 768px) {
+                    font-size: 1.4rem;
+                    text-decoration: underline;
+                    border: none;
+                    text-align: center;
+                    width: 100%;
+                }
             }
             .spa__trial-visit {
                 font-size: 1.6em;
                 display: inline-block;
                 font-weight: 600;
+                @media screen and (max-width: 768px) {
+                    font-size: 1.4rem;
+                    text-decoration: underline;
+                    border: none;
+                    text-align: center;
+                    width: 100%;
+                }
                 .spa__trial-link {
                     border-bottom: 0.1em dashed $blue;
                     color: $blue;
                     text-decoration: none;
                     margin: 0 0.5em;
+                    @media screen and (max-width: 768px) {
+                        font-size: 1.4rem;
+                        text-decoration: underline;
+                        border: none;
+                        text-align: center;
+                        width: 100%;
+                    }
                 }
             }
         }

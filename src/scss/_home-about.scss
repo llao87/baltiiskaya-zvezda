@@ -1,15 +1,26 @@
 .home-about {
     margin: 2.4rem 0;
+    @media screen and (max-width: 768px) {
+        margin: 2rem 0;
+    }
     .container {
         .row__home-about {
             display: flex;
             align-items: stretch;
             justify-content: space-between;
-            .col {
+            @media screen and (max-width: 991px) {
+                flex-wrap: wrap;
             }
             .col__photo {
                 width: 35.5%;
                 flex: none;
+                @media screen and (max-width: 1440px) {
+                    padding: 0 0 0 2rem;
+                }
+                @media screen and (max-width: 991px) {
+                    padding: 3rem 1.5rem;
+                    width: 100%;
+                }
                 .bg-block {
                     background-size: cover;
                     background-position: center;
@@ -22,18 +33,39 @@
                 width: 100%;
                 flex: 1;
                 padding: 0.8rem 10rem 0 1.6rem;
+
+                @media screen and (max-width: 1440px) {
+                    padding: 0 2rem 0 4rem;
+                }
+                @media screen and (max-width: 991px) {
+                    padding: 1rem 1.5rem 3rem 1.5rem;
+                    width: 100%;
+                }
                 .content-box {
                     width: 100%;
                     p {
                         font-size: 1.6rem;
                         margin: 0 0 2.4rem 0;
+                        @media screen and (max-width: 1440px) {
+                            font-size: 1.6rem;
+                        }
+                        @media screen and (max-width: 768px) {
+                            font-size: 1.4rem;
+                        }
                     }
                     ul {
-                        padding-left: 2em;
-                        margin-bottom: 0.6em;
+                        padding-left: 2rem;
+                        margin-bottom: 0.6rem;
+
                         li {
                             font-size: 1.6rem;
                             line-height: 1.4;
+                            @media screen and (max-width: 1440px) {
+                                font-size: 1.6rem;
+                            }
+                            @media screen and (max-width: 768px) {
+                                font-size: 1.4rem;
+                            }
                         }
                     }
                 }

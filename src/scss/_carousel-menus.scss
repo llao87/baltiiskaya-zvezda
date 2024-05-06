@@ -1,20 +1,33 @@
 .carousel-menus {
     margin: 5rem 0;
+    @media screen and (max-width: 768px) {
+        margin: 2rem 0;
+    }
     .container {
         .row {
             .section-title {
                 margin-bottom: 6.6rem;
+                @media screen and (max-width: 768px) {
+                    margin-bottom: 1.5rem;
+                }
             }
         }
         .row__menu-slider {
             text-align: center;
             margin: 0 0 5rem 0;
+            @media screen and (max-width: 768px) {
+                margin-bottom: 2rem;
+                padding-bottom: 4rem;
+            }
             .swiper {
                 max-width: 115rem;
                 height: 23.5rem;
                 .swiper-wrapper {
                     .swiper-slide {
                         padding: 0 2.5rem;
+                        @media screen and (max-width: 768px) {
+                            padding: 0;
+                        }
                         .inner {
                             width: 100%;
                             background-repeat: no-repeat;
@@ -61,6 +74,10 @@
                 justify-content: space-between;
                 height: 0;
                 padding: 0 4rem;
+                @media screen and (max-width: 768px) {
+                    top: auto;
+                    bottom: 2.5rem;
+                }
                 .prev,
                 .next {
                     width: 9rem;
@@ -85,6 +102,11 @@
                 line-height: 1.4;
                 margin-bottom: 1rem;
                 font-size: 2rem;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 1.4rem;
+                    padding: 0 1.5rem;
+                }
             }
 
             .btn {
@@ -92,6 +114,9 @@
                 transform: translateX(-50%);
                 margin: 3.2rem 0 0 0;
                 padding: 0.8rem 3.6rem;
+                @media screen and (max-width: 768px) {
+                    font-size: 1.4rem;
+                }
             }
         }
     }

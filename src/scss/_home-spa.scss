@@ -1,5 +1,12 @@
 .home-spa {
+    @media screen and (max-width: 1280px) {
+        margin: 2rem 0 4rem;
+    }
+    @media screen and (max-width: 768px) {
+        margin: 2rem 0 1rem;
+    }
     .container {
+        padding: 0 1.5rem;
         .row {
             .section-title {
             }
@@ -10,6 +17,10 @@
             justify-content: space-between;
             flex-wrap: wrap;
             padding: 0 7rem;
+            @media screen and (max-width: 768px) {
+                padding: 2rem 1.5rem 0;
+            }
+
             .spa-item {
                 width: 30%;
                 margin: 0 0 3.4rem 0;
@@ -18,6 +29,18 @@
                 background-repeat: no-repeat;
                 background-position: center;
                 overflow: hidden;
+                @media screen and (max-width: 1280px) {
+                    width: 32%;
+                    margin-bottom: 2rem;
+                    height: 20rem;
+                }
+                @media screen and (max-width: 991px) {
+                    width: 49%;
+                    margin-bottom: 0.6rem;
+                }
+                @media screen and (max-width: 768px) {
+                    height: 15rem;
+                }
                 .name {
                     color: #fff;
                     text-decoration: underline;
@@ -27,6 +50,17 @@
                     left: 50%;
                     transform: translateX(-50%);
                     z-index: 15;
+
+                    @media screen and (max-width: 991px) {
+                        width: 100%;
+                        text-align: center;
+                    }
+                    @media screen and (max-width: 768px) {
+                        font-size: 1.4rem;
+                        bottom: 0;
+                        background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 10%, rgba(0, 0, 0, 0.45) 50%);
+                        padding: 1rem 0;
+                    }
                 }
                 .info {
                     position: absolute;
@@ -43,6 +77,9 @@
                     left: 0;
                     top: 0;
                     padding: 2.5rem;
+                    @media screen and (max-width: 991px) {
+                        display: none !important;
+                    }
                     .title {
                         font-size: 1.8rem;
                         color: #fff;

@@ -5,28 +5,56 @@ footer {
             align-items: stretch;
             justify-content: space-between;
             width: auto;
-            height: 44.4em;
+            height: 44.4rem;
+            @media screen and (max-width: 991px) {
+                flex-wrap: wrap;
+                height: auto;
+            }
             .col {
                 flex: 1;
             }
             .col__addresses {
                 background-color: $blueGlass;
-                padding: 5em 2em 0 3.8em;
-                width: 100%;
+                padding: 4rem 2rem 0 3rem;
+                min-width: 28rem;
+
+                @media screen and (max-width: 1440px) {
+                    padding: 4rem 2rem 2rem 3rem;
+                }
+                @media screen and (max-width: 991px) {
+                    width: 50%;
+                    order: 2;
+                    flex: none;
+                    padding-left: 5rem;
+                }
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                }
                 .address {
                     color: $white;
                     display: flex;
                     align-items: center;
                     justify-content: flex-start;
-                    margin: 0 0 0.6em 0;
+                    margin: 0 0 0.6rem 0;
+                    @media screen and (max-width: 1280px) {
+                        margin: 0 0 2rem 0;
+                    }
                     .address__icon {
-                        width: 5em;
-                        height: 5em;
-                        margin: 0 2em 0 0;
+                        width: 5rem;
+                        height: 5rem;
+                        margin: 0 2rem 0 0;
+                        @media screen and (max-width: 1280px) {
+                            width: 4rem;
+                            height: 4rem;
+                        }
                     }
                     .address__text {
-                        font-size: 1.6em;
+                        font-size: 1.6rem;
                         line-height: 1.2;
+
+                        @media screen and (max-width: 1280px) {
+                            font-size: 1.5em;
+                        }
                     }
                 }
 
@@ -34,29 +62,39 @@ footer {
                     display: flex;
                     align-items: center;
                     justify-content: flex-start;
-                    margin: 3em 0 3.5em 0.4em;
+                    margin: 3rem 0 3.5rem 0.4rem;
                     .soc {
-                        width: 5em;
-                        height: 5em;
+                        width: 5rem;
+                        height: 5rem;
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        margin: 0 0.6em 0 0;
+                        margin: 0 0.6rem 0 0;
+
+                        @media screen and (max-width: 1280px) {
+                            width: 3.5rem;
+                            height: 3.5rem;
+                        }
 
                         .icon-vk,
                         .icon-ok,
                         .icon-wa,
                         .icon-tgm {
-                            width: 100%;
-                            height: 100%;
+                            max-width: 100%;
+                            max-height: 100%;
+                            width: auto;
+                            height: auto;
                         }
                     }
                 }
 
                 .payments {
-                    margin: 0 0 3em 0;
-                    width: 30em;
-                    height: 3em;
+                    margin: 0 0 3rem 0;
+                    width: 20rem;
+                    height: 3rem;
+                    @media screen and (max-width: 1280px) {
+                        width: 20rem;
+                    }
                     .payments__img {
                         width: auto;
                         height: auto;
@@ -66,8 +104,8 @@ footer {
                 }
 
                 .get-taxi {
-                    width: 13.1em;
-                    height: 2.7em;
+                    width: 13.1rem;
+                    height: 2.7rem;
                     cursor: pointer;
                     img {
                         width: auto;
@@ -79,18 +117,46 @@ footer {
             }
             .col__map {
                 flex: none;
-                width: 72em;
+                flex: 4;
+
+                @media screen and (max-width: 1280px) {
+                    flex: 4;
+                }
+                @media screen and (max-width: 991px) {
+                    width: 100%;
+                    order: 1;
+                    flex: none;
+                    height: 30rem;
+                }
 
                 iframe {
-                    width: 72em;
-                    height: 44em;
+                    width: 100%;
+                    height: 44rem;
+
+                    @media screen and (max-width: 991px) {
+                        height: 100%;
+                    }
                 }
             }
 
             .col__links {
                 background-color: $blueGlass;
-                padding: 3.8em 0 0 5.2em;
-                width: 100%;
+                padding: 4rem 2rem 0 3rem;
+                flex: 1;
+                min-width: 28rem;
+
+                @media screen and (max-width: 1280px) {
+                    padding: 4rem 2rem 2rem 3rem;
+                }
+                @media screen and (max-width: 991px) {
+                    width: 50%;
+                    order: 3;
+                    flex: none;
+                    padding-left: 5rem;
+                }
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
                 .footer__menu {
                     list-style: none;
                     margin: 0 0 4.2em 0;
@@ -100,16 +166,20 @@ footer {
                             font-weight: 400;
                             text-decoration: none;
                             text-transform: uppercase;
-                            font-size: 1.2em;
+                            font-size: 1.2rem;
                             line-height: 2;
+
+                            @media screen and (max-width: 1280px) {
+                                font-size: 1rem;
+                            }
                         }
                     }
                 }
 
                 .dela-prezidenta {
-                    width: 17em;
-                    height: 14.1em;
-                    left: -1.6em;
+                    width: 17rem;
+                    height: 14.1rem;
+                    left: -1.6rem;
                 }
             }
         }
@@ -120,13 +190,36 @@ footer {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                padding-left: 2.5em;
-                padding-right: 2.5em;
-                padding: 3.2em 2.5em 4.4em;
+                padding-left: 2.5rem;
+                padding-right: 2.5rem;
+                padding: 3.2rem 2.5rem 4.4rem;
+                @media screen and (max-width: 1280px) {
+                    padding: 2.2rem 2.5rem;
+                }
+                @media screen and (max-width: 991px) {
+                    display: flex;
+                    align-items: stretch;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                }
                 .doc__link {
                     color: $white;
                     text-decoration: none;
-                    font-size: 1.5em;
+                    font-size: 1.5rem;
+
+                    @media screen and (max-width: 1440px) {
+                        font-size: 1.4rem;
+                    }
+                    @media screen and (max-width: 1280px) {
+                        font-size: 1.2rem;
+                    }
+                    @media screen and (max-width: 991px) {
+                        width: 50%;
+                        line-height: 3;
+                    }
+                    @media screen and (max-width: 768px) {
+                        width: 100%;
+                    }
                 }
             }
         }

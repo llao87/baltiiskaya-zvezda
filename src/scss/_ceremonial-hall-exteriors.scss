@@ -1,17 +1,33 @@
 .palace-exteriors {
     margin: 4.4rem 0 5rem;
+    @media screen and (max-width: 768px) {
+        margin: 3rem 0;
+    }
     .container {
         .row {
             margin-bottom: 3rem;
+            @media screen and (max-width: 768px) {
+                margin: 2rem 0; 
+            }
             .section-title {
                 line-height: 1;
                 margin: 0;
+                @media screen and (max-width: 768px) {
+                    margin: 0;
+                }
             }
         }
         .row__exteriors-slider {
             padding: 0 20rem;
+            @media screen and (max-width: 768px) {
+                padding: 0 1.5rem;
+            }
+                
             .swiper {
                 height: 60.5rem;
+                @media screen and (max-width: 768px) {
+                    height: 100%;
+                }   
                 .swiper-wrapper {
                     height: 100%;
                     .swiper-slide {
@@ -28,6 +44,10 @@
                     .next {
                         width: 4rem;
                         height: 4rem;
+                        @media screen and (max-width: 768px) {
+                            width: 3rem;
+                            height: 3rem;
+                        }
                     }
                 }
             }

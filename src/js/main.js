@@ -87,10 +87,15 @@ jQuery(function () {
     const menusSlider = new Swiper(".js__menu-slider .swiper", {
         loop: true,
         speed: 800,
-        slidesPerView: 3,
+        slidesPerView: 1,
         navigation: {
             nextEl: ".js__menu-slider .next",
             prevEl: ".js__menu-slider .prev",
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 3,
+            },
         },
     });
 
@@ -131,6 +136,7 @@ jQuery(function () {
     const cyanHallSlider = new Swiper(".js__hall-gallery", {
         loop: true,
         speed: 800,
+        allowTouchMove: false,
         spaceBetween: 20,
         slidesPerView: 1,
         navigation: {
@@ -146,11 +152,15 @@ jQuery(function () {
         loop: true,
         speed: 800,
         spaceBetween: 50,
-        slidesPerView: 6,
-        // navigation: {
-        //     nextEl: ".js__interiors-slider > .next",
-        //     prevEl: ".js__interiors-slider > .prev",
-        // },
+        slidesPerView: 1,
+        breakpoints: {
+            768: {
+                slidesPerView: 3,
+            },
+            991: {
+                slidesPerView: 6,
+            },
+        },
     });
 
     /**
@@ -176,6 +186,38 @@ jQuery(function () {
         navigation: {
             nextEl: ".js__room-photo .controls__gallery .next",
             prevEl: ".js__room-photo .controls__gallery .prev",
+        },
+    });
+
+    const homeHallsSlider = new Swiper(".js__halls-home-slider", {
+        loop: false,
+        speed: 800,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".js__halls-home-slider > .controls__gallery .next",
+            prevEl: ".js__halls-home-slider > .controls__gallery .prev",
+        },
+        breakpoints: {
+            580: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            1280: {
+                slidesPerView: 3,
+                spaceBetween: 28,
+            },
+        },
+    });
+
+    const homeActionsSlider = new Swiper(".js__home-actions-slider", {
+        loop: true,
+        speed: 800,
+        spaceBetween: 20,
+        slidesPerView: 1,
+        navigation: {
+            nextEl: ".js__home-actions-slider > .controls .next",
+            prevEl: ".js__home-actions-slider > .controls .prev",
         },
     });
 });

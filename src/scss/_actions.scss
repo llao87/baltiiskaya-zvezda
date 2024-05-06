@@ -1,4 +1,7 @@
 .actions {
+    @media screen and (max-width: 768px) {
+        padding: 2rem 1.5rem;
+    }
     .container {
         max-width: 120em;
         .row__single-action {
@@ -8,6 +11,18 @@
             margin-bottom: 5em;
             margin-top: 5em;
 
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+                margin: 0 0 3rem 0;
+                border-bottom: thin solid #cbcbcb;
+                padding: 0;
+            }
+            &:last-child {
+                @media screen and (max-width: 768px) {
+                    border-bottom: none;
+                    margin-bottom: 0;
+                }
+            }
             .action__photo {
                 width: 40em;
                 height: 40em;
@@ -15,32 +30,66 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
+                @media screen and (max-width: 768px) {
+                    height: 24rem;
+                }
             }
             .action__info {
                 width: 100%;
                 padding: 2.2em 3em;
+                @media screen and (max-width: 768px) {
+                    margin: 2rem 0;
+                    width: 100%;
+                    height: auto;
+                    padding: 0;
+                }
                 .action__title {
                     font-size: 1.8em;
                     font-weight: 600;
                     margin-bottom: 0.5em;
+                    @media screen and (max-width: 768px) {
+                        width: 100%;
+                        font-size: 1.6rem;
+                    }
                 }
                 .content-box {
                     color: $blue;
                     font-size: 0.9em;
+                    @media screen and (max-width: 768px) {
+                        font-size: 1.4rem;
+                    }
+
+                    p {
+                        @media screen and (max-width: 768px) {
+                            font-size: 1.4rem;
+                            margin-bottom: 1rem;
+                        }
+                    }
                 }
                 .btn {
                     padding: 0.4em 2em;
                     margin-top: 2em;
+                    @media screen and (max-width: 768px) {
+                        font-size: 1.4rem;
+                    }
                 }
             }
         }
         .action--left {
             .action__photo {
                 order: 1;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    height: 22rem;
+                }
             }
             .action__info {
                 order: 2;
                 padding-right: 15em;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    padding: 0;
+                }
                 .action__title {
                 }
                 .content-box {
@@ -52,15 +101,29 @@
         .action--right {
             .action__photo {
                 order: 2;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    height: 22rem;
+                    order: 1;
+                }
             }
             .action__info {
                 order: 1;
                 padding-left: 10em;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    padding: 0;
+                    order: 2;
+                }
                 .action__title {
                 }
                 .content-box {
                 }
                 .btn {
+                    @media screen and (max-width: 768px) {
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
                 }
             }
         }
@@ -70,7 +133,16 @@
             font-size: 1.2em;
             color: #444;
             margin-bottom: 4em;
+            @media screen and (max-width: 768px) {
+                margin: 0;
+                font-size: 1.4rem;
+            }
             .content-box {
+                p {
+                    @media screen and (max-width: 768px) {
+                        font-size: 1.4rem;
+                    }
+                }
             }
         }
     }
