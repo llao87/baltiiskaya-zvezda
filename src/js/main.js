@@ -220,4 +220,12 @@ jQuery(function () {
             prevEl: ".js__home-actions-slider > .controls .prev",
         },
     });
+
+    let navMenu = jQuery("ul.nav");
+
+    jQuery(".js__burger").on("click", function (e) {
+        e.preventDefault();
+
+        navMenu.slideToggle();
+    });
 });
